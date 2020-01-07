@@ -23,4 +23,5 @@ const fred = {
   children: []
 };
 
-validator.isValid();
+console.log(validator.isValid(susan, personRules));
+console.log(validator.isValid(fred, personRules));

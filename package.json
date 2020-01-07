@@ -4,8 +4,11 @@
   "description": "this will be sooooo cool",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage",
-    "lint": "eslint '**/*.js'"
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "author": "",
   "license": "ISC",

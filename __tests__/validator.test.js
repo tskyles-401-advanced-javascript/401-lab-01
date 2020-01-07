@@ -1,6 +1,7 @@
 'use strict';
 
 const validator = require('../lib/validator.js');
+const faker = require('faker');
 
 describe('validator module performs basic validation of', () => {
   // TODO: Make this series of tests less repetitive ... DRY it out
@@ -71,8 +72,36 @@ describe('validator module performs basic validation of', () => {
 });
 
 describe('validator module performs complex validations', () => {
+  it('validate the basic schema isValid() function', () => {
+    //go through the schema and fill in perfect values for every field
+    let testRecord = {};
+
+    for (let field in rules.fields) {
+      switch (rules.fields[field].type) {
+        case 'boolean':
+          testRecord[field] = faker.random.boolean();
+          break;
+        case 'number':
+          testRecord[field] = faker.random.number();
+          break;
+        case 'string':
+          testRecord[field] = faker.random.word();
+          break;
+        case 'array':
+          testRecord[field] = [];
+          testRecord[field].push(faker.random.arrayElement());
+          testRecord[field].push(faker.random.arrayElement());
+          break;
+        default:
+          null;
+      }
+    }
+    expect(validator.isValid(testRecord, rules)).toBeTruthy();
+  });
+
   it('validates the presence of required object properties at any level', () => {
     // i.e. does person.hair.color exist and have a good value, not just person.hair
+
     expect(true).toBeFalsy();
   });
 

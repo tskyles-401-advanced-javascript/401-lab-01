@@ -6,12 +6,13 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [travis](http://xyz.com)
+- [submission PR](https://github.com/tskyles-401-advanced-javascript/401-lab-01/pull/1/)
+- [travis](https://travis-ci.com/tskyles-401-advanced-javascript/401-lab-01/builds/144670547)
 
 #### Documentation
 
-- JSDoc Comment Required for all modules and functions in all .js files
+- JSDoc 
+- run files in /docs folder to view documentation
 
 ### Setup
 

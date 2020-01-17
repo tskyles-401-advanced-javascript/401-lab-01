@@ -27,5 +27,5 @@ use 'npm test' to run test suite
 
 #### UML
 
-![](./assets/lab01)
+![](./assets/lab01.jpg)
 

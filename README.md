@@ -7,7 +7,7 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/tskyles-401-advanced-javascript/401-lab-01/pull/1/)
-- [travis](https://travis-ci.com/tskyles-401-advanced-javascript/401-lab-01/builds/144670547)
+- [travis](https://travis-ci.com/tskyles-401-advanced-javascript/401-lab-01)
 
 #### Documentation
 
